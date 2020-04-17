@@ -1,2 +1,2 @@
-# Technical_Note-Mobile_App
+# Technical Note
 This repository used for common technical notes
