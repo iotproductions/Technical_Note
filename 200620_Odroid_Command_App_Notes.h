@@ -2,7 +2,6 @@
 // Odroiod command app notes
 //-----------------------------------------------------------------------------------------------------------------------
 
-
 //-----------------------------------------------------------------------------------------------------------------------
 // Set password for root user
 sudo passwd root
@@ -104,17 +103,7 @@ sudo reboot
 
 sudo service mosquitto restart
 //----------------------------------------------------------------------------------------------
-// Install Crontab
-// https://www.raspberrypi.org/documentation/linux/usage/cron.md
+// Install CroInstall Apache
 //----------------------------------------------------------------------------------------------
-sudo apt-get install gnome-schedule
-crontab -e
-or
-sudo crontab -u pi -e
+sudo apt-get install apache2
 
-@reboot sudo mosquitto -c /etc/mosquitto/mosquitto.conf -d
-
-Fix error: "crontabs//: fopen: Permission denied" 
-https://askubuntu.com/questions/710671/cannot-access-crontab-after-changing-uid
-sudo chown root:crontab /usr/bin/crontab
-sudo chmod 2755 /usr/bin/crontab
