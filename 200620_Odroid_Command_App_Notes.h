@@ -106,4 +106,16 @@ sudo service mosquitto restart
 // Install CroInstall Apache
 //----------------------------------------------------------------------------------------------
 sudo apt-get install apache2
-
+//----------------------------------------------------------------------------------------------
+// Install pm2-web-ui
+// PM2 Web monitoring Tool
+//----------------------------------------------------------------------------------------------
+sudo git clone https://github.com/alexnzarov/pm2-web-ui
+cd pm2-web-ui
+sudo npm install
+// Change MongoDB URL and password at file
+"/home/odroid/pm2-web-ui/server/config/index.ts"
+sudo npm run build
+pm2 start npm --name "pm2-web-ui" -- start
+pm2 startup
+pm2 save
