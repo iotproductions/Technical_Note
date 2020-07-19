@@ -116,9 +116,19 @@ sudo npm install pm2 -g
 //----------------------------------------------------------------------------------------------
 sudo git clone https://github.com/alexnzarov/pm2-web-ui
 cd pm2-web-ui
-sudo npm install
+
 // Change MongoDB URL and password at file
 "/home/odroid/pm2-web-ui/server/config/index.ts"
+/*
+  const config = {
+  mongodbUri: process.env.MONGODB_URI || 'mongodb://trieu.le:ttpxxxx@ds019628.mlab.com:19628/ttp_database',
+  salt: process.env.SALT || 'Trieuxxxxxx',
+};
+
+export default config;
+*/
+  
+sudo npm install
 sudo npm run build
   
 pm2 start npm --name "pm2-web-ui" -- start
