@@ -127,8 +127,10 @@ cd pm2-web-ui
 
 export default config;
 */
-  
+// Install components  
 sudo npm install
+sudo npm audit fix
+// Build applicaiton  
 sudo npm run build
   
 pm2 start npm --name "pm2-web-ui" -- start
