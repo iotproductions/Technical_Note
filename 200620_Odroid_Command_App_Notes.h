@@ -120,6 +120,8 @@ sudo npm install
 // Change MongoDB URL and password at file
 "/home/odroid/pm2-web-ui/server/config/index.ts"
 sudo npm run build
+  
 pm2 start npm --name "pm2-web-ui" -- start
+// App running on port 3000
 pm2 startup
 pm2 save
