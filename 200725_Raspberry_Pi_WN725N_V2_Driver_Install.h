@@ -2,6 +2,12 @@ RASPBERRY PI 2 MODEL B WITH TL-WN725N Version 2
 #********************************************************************************
 # RASPBERRY PI 2 MODEL B ON DEBIAN STRETCH 9.6
 #********************************************************************************
+http://diantokam.blogspot.com/2018/12/raspberry-pi-2-model-b-with-tl-wn725n.html
+
+sudo wget http://downloads.fars-robotics.net/wifi-drivers/install-wifi -O /usr/bin/install-wifi
+sudo chmod +x /usr/bin/install-wifi
+sudo /usr/bin/install-wifi
+
 
 root@raspime:~# cat /etc/debian_version
 9.6
