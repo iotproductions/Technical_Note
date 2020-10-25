@@ -45,7 +45,6 @@ Bus 001 Device 005: ID 0bda:8179 Realtek Semiconductor Corp. RTL8188EUS 802.11n 
 #*******************************************************************************
 # DRIVER FOR TL-WN725N Version 2
 #*******************************************************************************
-
-root@raspime:~# sudo wget http://downloads.fars-robotics.net/wifi-drivers/install-wifi -O /usr/bin/install-wifi
-root@raspime:~# sudo chmod +x /usr/bin/install-wifi
-root@raspime:~# /usr/bin/install-wifi
+sudo wget http://downloads.fars-robotics.net/wifi-drivers/install-wifi -O /usr/bin/install-wifi
+sudo chmod +x /usr/bin/install-wifi
+sudo /usr/bin/install-wifi
